@@ -7,6 +7,11 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 import logging
+
+import kagglehub
+# Download latest version
+path = kagglehub.dataset_download("icebearogo/fruit-classification-dataset")
+
 logger = tf.get_logger()
 logger.setLevel(logging.ERROR)
 
