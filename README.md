@@ -21,3 +21,13 @@ If using Docker Desktop, we need to use GPU integration for WSL which will requi
 2.) Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) with Ubuntu\
 3.) Enter ```sudo apt-key del 7fa2af80``` into WSL\
 4.) Install the [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0) (Follow the instructions for the Linux x86, Ubuntu WSL package)
+
+## Docker
+To build the image for the training session:\
+```docker build -t [image name] .```\
+\
+Then, run the image:\
+```docker run [image name]```\
+\
+For GPU utilization:\
+```docker run --gpus all [image name]```
