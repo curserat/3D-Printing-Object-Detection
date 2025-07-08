@@ -7,10 +7,12 @@ Install [Docker](https://www.docker.com/) (Docker Desktop on Windows)*\
 *For Windows, install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) and enable WSL integration (enabled by default) in Docker Desktop
 
 ## Dev
+**Please work on a test branch before pushing to main.**\
+\
 We'll be working with .py files for model training and testing. 
 If additional packages/libraries need to be imported, please add them to the requirements.txt file and rebuild your docker image.\
-\
-**Please work on a test branch before pushing to main.**
+**NOTE**: You must use the **tensorflow[and-cuda]** package for GPU utilization. If you are not using an NVIDA GPU, use the **tensorflow** package in requirements.txt. 
+
 
 ## Training
 Epoch time will depend on the local machine hardware specs. Using a dedicated GPU will speed up the rate an epoch is finished.
