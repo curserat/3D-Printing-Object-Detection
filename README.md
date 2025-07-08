@@ -11,7 +11,7 @@ Install [Docker](https://www.docker.com/) (Docker Desktop on Windows)*\
 \
 We'll be working with .py files for model training and testing. 
 If additional packages/libraries need to be imported, please add them to the requirements.txt file and rebuild your docker image.\
-**NOTE**: You must use the **tensorflow[and-cuda]** package for GPU utilization. If you are not using an NVIDA GPU, use the **tensorflow** package in requirements.txt. 
+**NOTE**: You must use the ```tensorflow[and-cuda]``` package for GPU utilization. If you are not using an NVIDA GPU, use the ```tensorflow``` package in requirements.txt. 
 
 
 ## Training with a GPU
