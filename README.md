@@ -14,7 +14,7 @@ If additional packages/libraries need to be imported, please add them to the req
 **NOTE**: You must use the **tensorflow[and-cuda]** package for GPU utilization. If you are not using an NVIDA GPU, use the **tensorflow** package in requirements.txt. 
 
 
-## Training
+## Training with a GPU
 Epoch time will depend on the local machine hardware specs. Using a dedicated GPU will speed up the rate an epoch is finished.
 If using Docker Desktop, we need to use GPU integration for WSL which will require an NVIDIA GPU. Please follow the documentation for [Docker GPU support](https://docs.docker.com/desktop/features/gpu/).\
 \
