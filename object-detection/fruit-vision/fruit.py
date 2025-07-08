@@ -67,4 +67,4 @@ BATCH_SIZE = 32
 model.fit(train_data_norm, epochs=10, steps_per_epoch=math.ceil(50000/BATCH_SIZE))
 
 model.evaluate(test_data_norm)
-model.save(fruit.keras)
+model.save("fruit.keras")
