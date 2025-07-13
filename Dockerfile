@@ -4,5 +4,7 @@ WORKDIR /src
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+EXPOSE 8888
+
 COPY . .
-CMD ["python3", "/src/object-detection/fruit-vision/fruit.py"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
