@@ -33,3 +33,10 @@ Then, run the image:\
 \
 For GPU utilization:\
 ```docker run --gpus all [image name]```
+
+For Jupyter Lab w/o GPU utilization:\
+```docker run -p 8888:8888 [image name]```
+
+For Jupyter Lab with GPU utilization:\
+```docker run --gpus all -p 8888:8888 [image name]```
+
